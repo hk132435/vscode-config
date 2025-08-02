@@ -1,0 +1,57 @@
+{
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Run Current File",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${file}",
+                "console": "internalConsole", // <-- so you can input/output in the editor
+                "cwd": "${fileDirname}", // <-- sets working directory to the file’s folder
+                "args": [
+                    "--foo",
+                    "bar"
+                ],
+                // Optional: use a specific Python interpreter
+                // "python": "/usr/local/bin/python3"
+            }
+        ]
+    },
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564"
+    },
+    "gitlens.views.contributors.showAllBranches": true,
+    // "workbench.list.openMode": "doubleClick",
+    "workbench.tree.expandMode": "doubleClick",
+    "git.ignoreLegacyWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "editor.formatOnSave": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderControlCharacters": true,
+    "workbench.editor.wrapTabs": true,
+    "editor.wordWrapColumn": 80000,
+    "window.title": "${dirty}${folderName}${rootName}",
+    "debug.console.wordWrap": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "diffEditor.renderSideBySide": true
+}

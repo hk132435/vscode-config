@@ -1,0 +1,86 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        // alt for win cmd for mac
+        "key": "cmd+e",
+        "command": "editor.debug.action.selectionToRepl"
+    },
+    {
+        // alt for win cmd for mac (ctrl if swapped keys)
+        "key": "ctrl+f2",
+        "command": "workbench.panel.repl.view.focus"
+    },
+    {
+        // alt for win cmd for mac (ctrl if swapped keys)
+        "key": "ctrl+f1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "revealInExplorer",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "workbench.extensions.installLocalExtensions"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.debug.action.selectionToRepl"
+    },
+    {
+        // mac specific
+        "key": "ctrl+left",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
+        // mac specific
+        "key": "ctrl+right",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus"
+    },
+    {
+        // mac specific
+        "key": "cmd+left",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        // mac specific
+        "key": "cmd+right",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        // mac specific
+        "key": "cmd+shift+left",
+        "command": "cursorWordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        // mac specific
+        "key": "cmd+shift+right",
+        "command": "cursorWordRightSelect",
+        "when": "editorTextFocus"
+    }
+]
