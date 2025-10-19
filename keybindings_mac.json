@@ -5,10 +5,14 @@
         "key": "cmd+e",
         "command": "editor.debug.action.selectionToRepl"
     },
+    // {
+    //     // alt for win cmd for mac (ctrl if swapped keys)
+    //     "key": "ctrl+f2",
+    //     "command": "workbench.panel.repl.view.focus"
+    // },
     {
-        // alt for win cmd for mac (ctrl if swapped keys)
         "key": "ctrl+f2",
-        "command": "workbench.panel.repl.view.focus"
+        "command": "workbench.debug.action.toggleRepl"
     },
     {
         // alt for win cmd for mac (ctrl if swapped keys)
